@@ -72,6 +72,10 @@ body {
   transform: scaleX(0.5);
 }
 
+.navbar .navbar-extra {
+  display: none;
+}
+
 .navbar .navbar-extra a {
   color: #fff;
   margin: 0 0.5rem;
@@ -686,6 +690,10 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-extra {
+    display: inline-block;
   }
 
   .navbar .search-form {
