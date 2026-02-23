@@ -1,11 +1,25 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     items: [
-      { id: 1, name: "Robusta Brazil", img: "1.jpg", price: 20000 },
-      { id: 2, name: "Arabica Blens", img: "2.webp", price: 25000 },
-      { id: 3, name: "Primo Passo", img: "3.jpg", price: 30000 },
-      { id: 4, name: "Aceh Gayo", img: "4.jpg", price: 35000 },
-      { id: 5, name: "Sumatra Mandheling", img: "5.jpg", price: 40000 },
+      { id: 1, name: "Marmut Meses Keju", img: "1.png", price: 20000 },
+      { id: 2, name: "Marmut Keju", img: "2.png", price: 20000 },
+      { id: 3, name: "Marmut Keju & Choco Cruncy", img: "3.png", price: 20000 },
+      { id: 4, name: "Marmut Choco Cruncy", img: "4.png", price: 20000 },
+      { id: 5, name: "Marmut", img: "5.png", price: 20000 },
+      { id: 6, name: "Marmut", img: "6.png", price: 20000 },
+      { id: 7, name: "Marmut", img: "7.png", price: 20000 },
+      { id: 8, name: "Marmut", img: "8.png", price: 20000 },
+      // { id: 9, name: "Marmut", img: "9.png", price: 20000 },
+      // { id: 10, name: "Marmut", img: "10.png", price: 20000 },
+      // { id: 11, name: "Marmut", img: "11.png", price: 20000 },
+      { id: 12, name: "Marmut", img: "12.png", price: 20000 },
+      { id: 13, name: "Marmut", img: "13.png", price: 20000 },
+      { id: 14, name: "Marmut", img: "14.png", price: 20000 },
+      { id: 15, name: "Marmut", img: "15.png", price: 20000 },
+      { id: 16, name: "Marmut", img: "16.png", price: 20000 },
+      { id: 17, name: "Marmut", img: "17.png", price: 20000 },
+      { id: 18, name: "Marmut", img: "18.png", price: 20000 },
+      { id: 19, name: "Marmut", img: "19.png", price: 20000 },
     ],
   }));
   Alpine.store("cart", {

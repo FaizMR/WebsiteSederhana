@@ -26,7 +26,7 @@
   <body>
     <!-- navbar start -->
     <nav class="navbar" x-data="products">
-      <a href="#" class="navbar-logo">Martabak <span>Imut</span>.</a>
+        <a href="#" class="navbar-logo">Martabak <span>Imut</span>.</a>
       <div class="navbar-nav">
         <a href="#home">Home</a><a href="#about">Tentang kami</a
         ><a href="#menu">Menu</a>
@@ -139,33 +139,24 @@
     </section>
     <!-- about section end -->
     <!-- menu section start -->
-    <section id="menu" class="menu">
+    <section id="menu" class="menu" x-data="products">
       <h2><span>Menu</span> Kami</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio soluta
         ullam fuga laudantium natus itaque?
       </p>
       <div class="row">
-        <div class="menu-card">
-          <img src="img/menu/1.png" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">- Marmut Seres & Keju -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/2.png" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">- Marmut Keju -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/3.png" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">- Marmut Keju & Choco Cruncy -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/4.png" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">- Marmut Choco Cruncy -</h3>
-          <p class="menu-card-price">IDR 20K</p>
-        </div>
+        <template x-for="(item, index) in items" x-key="index">
+          <div class="menu-card">
+            <img
+              :src="`img/menu/${item.img}`"
+              :alt="item.name"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title" x-text="item.name"></h3>
+            <p class="menu-card-price" x-text="rupiah(item.price)"></p>
+          </div>
+        </template>
       </div>
     </section>
     <!-- menu section end -->
